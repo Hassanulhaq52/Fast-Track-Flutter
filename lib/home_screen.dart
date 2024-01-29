@@ -34,19 +34,17 @@ class HomeScreen extends StatelessWidget {
             backgroundColor: Colors.green,
             centerTitle: true,
             leading: Icon(Icons.arrow_back),
-            actions: [
+            actions: const [
               CircleAvatar(
                 backgroundColor: Colors.blue,
                 child: Icon(Icons.person),
               ),
             ],
           ),
-          body: const TabBarView(
+          body: TabBarView(
             children: [
               Column(children: [
-
-                ListTile(
-
+               const ListTile(
                   trailing: CircleAvatar(
                     child: Icon(Icons.add),
                   ),
@@ -57,6 +55,17 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
 
+                // Elevated Button
+
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text('Submit'),
+                ),
+                SizedBox(height: 30),
+
+                // IconButton
+                IconButton(
+                    onPressed: () {}, icon: Icon(Icons.add_a_photo_outlined))
               ])
 
               // Center(child: Text('This is Home Screen')),
