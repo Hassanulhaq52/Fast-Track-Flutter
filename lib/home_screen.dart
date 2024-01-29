@@ -41,12 +41,28 @@ class HomeScreen extends StatelessWidget {
               ),
             ],
           ),
-          body: TabBarView(
+          body: const TabBarView(
             children: [
-              Center(child: Text('This is Home Screen')),
-              Center(child: Text('This is Person Screen')),
+              Column(children: [
 
-              Center(child: Text('This is Add Screen')),
+                ListTile(
+
+                  trailing: CircleAvatar(
+                    child: Icon(Icons.add),
+                  ),
+                  title: Text('Name'),
+                  subtitle: Text('This is name'),
+                  leading: CircleAvatar(
+                    child: Icon(Icons.person),
+                  ),
+                ),
+
+              ])
+
+              // Center(child: Text('This is Home Screen')),
+              // Center(child: Text('This is Person Screen')),
+              //
+              // Center(child: Text('This is Add Screen')),
               // Icon(Icons.add),
             ],
           ),
