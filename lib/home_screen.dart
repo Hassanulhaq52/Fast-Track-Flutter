@@ -65,8 +65,18 @@ class HomeScreen extends StatelessWidget {
 
                 // IconButton
                 IconButton(
-                    onPressed: () {}, icon: Icon(Icons.add_a_photo_outlined))
-              ])
+                    onPressed: () {}, icon: Icon(Icons.add_a_photo_outlined)),
+                SizedBox(height: 30),
+                TextField(
+
+                  decoration: InputDecoration(
+                    hintText: 'Enter your Name'
+                  ),
+
+                ),
+              ]),
+
+
 
               // Center(child: Text('This is Home Screen')),
               // Center(child: Text('This is Person Screen')),
