@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:platform_specific/drawer.dart';
 import 'package:platform_specific/home_screen.dart';
 
 void main() {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Platform Specific Widgets',
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: DrawerScreen(),
     );
   }
 }

@@ -7,7 +7,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: DefaultTabController(
-        length: 3,
+        length: 5,
         child: Scaffold(
           floatingActionButton: FloatingActionButton(
             onPressed: () {},
@@ -26,6 +26,8 @@ class HomeScreen extends StatelessWidget {
             bottom: TabBar(
               tabs: [
                 Icon(Icons.home),
+                Icon(Icons.person_off_rounded),
+                Icon(Icons.add),
                 Icon(Icons.person_off_rounded),
                 Icon(Icons.add),
               ],
@@ -71,6 +73,133 @@ class HomeScreen extends StatelessWidget {
 
                   decoration: InputDecoration(
                     hintText: 'Enter your Name'
+                  ),
+
+                ),
+              ]),
+              Column(children: [
+                const ListTile(
+                  trailing: CircleAvatar(
+                    child: Icon(Icons.add),
+                  ),
+                  title: Text('Name'),
+                  subtitle: Text('This is name'),
+                  leading: CircleAvatar(
+                    child: Icon(Icons.person),
+                  ),
+                ),
+
+                // Elevated Button
+
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text('Submit'),
+                ),
+                SizedBox(height: 30),
+
+                // IconButton
+                IconButton(
+                    onPressed: () {}, icon: Icon(Icons.add_a_photo_outlined)),
+                SizedBox(height: 30),
+                TextField(
+
+                  decoration: InputDecoration(
+                      hintText: 'Enter your Name'
+                  ),
+
+                ),
+              ]),
+              Column(children: [
+                const ListTile(
+                  trailing: CircleAvatar(
+                    child: Icon(Icons.add),
+                  ),
+                  title: Text('Name'),
+                  subtitle: Text('This is name'),
+                  leading: CircleAvatar(
+                    child: Icon(Icons.person),
+                  ),
+                ),
+
+                // Elevated Button
+
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text('Submit'),
+                ),
+                SizedBox(height: 30),
+
+                // IconButton
+                IconButton(
+                    onPressed: () {}, icon: Icon(Icons.add_a_photo_outlined)),
+                SizedBox(height: 30),
+                TextField(
+
+                  decoration: InputDecoration(
+                      hintText: 'Enter your Name'
+                  ),
+
+                ),
+              ]),Column(children: [
+                const ListTile(
+                  trailing: CircleAvatar(
+                    child: Icon(Icons.add),
+                  ),
+                  title: Text('Name'),
+                  subtitle: Text('This is name'),
+                  leading: CircleAvatar(
+                    child: Icon(Icons.person),
+                  ),
+                ),
+
+                // Elevated Button
+
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text('Submit'),
+                ),
+                SizedBox(height: 30),
+
+                // IconButton
+                IconButton(
+                    onPressed: () {}, icon: Icon(Icons.add_a_photo_outlined)),
+                SizedBox(height: 30),
+                TextField(
+
+                  decoration: InputDecoration(
+                      hintText: 'Enter your Name'
+                  ),
+
+                ),
+              ]),
+              Column(children: [
+                const ListTile(
+                  trailing: CircleAvatar(
+                    child: Icon(Icons.add),
+                  ),
+                  title: Text('Name'),
+                  subtitle: Text('This is name'),
+                  leading: CircleAvatar(
+                    child: Icon(Icons.person),
+                  ),
+                ),
+
+                // Elevated Button
+
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text('Submit'),
+                ),
+                SizedBox(height: 30),
+
+                // IconButton
+                IconButton(
+                    onPressed: () {}, icon: Icon(Icons.add_a_photo_outlined)),
+                SizedBox(height: 30),
+                TextField(
+
+                  decoration: InputDecoration(
+                      hintText: 'Enter your Name'
                   ),
 
                 ),
