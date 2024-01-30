@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:platform_specific/platform_independent/icons_screen.dart';
 import 'package:platform_specific/platform_independent/image_screen.dart';
 import 'package:platform_specific/platform_independent/text_screen.dart';
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Platform Specific Widgets',
       debugShowCheckedModeBanner: false,
-      home: ImageScreen(),
+      home: IconsScreen(),
     );
   }
 }
