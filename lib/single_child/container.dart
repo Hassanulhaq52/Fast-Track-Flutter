@@ -62,7 +62,22 @@ class ContainerScreen extends StatelessWidget {
               ),
             ),
           ),
-
+          Center(
+            child: Transform.rotate(
+              angle: 0.5,
+              child: Container(
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                    image: DecorationImage(image: AssetImage('images/gym.jpg')),
+                    color: Colors.red,
+                    borderRadius: BorderRadius.circular(40),
+                    border: Border.all(width: 3)),
+                height: 100,
+                width: 250,
+                child: Text('This is Alignment'),
+              ),
+            ),
+          ),
 
         ],
       ),
