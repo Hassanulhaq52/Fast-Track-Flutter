@@ -3,6 +3,10 @@ import 'package:platform_specific/platform_independent/icons_screen.dart';
 import 'package:platform_specific/platform_independent/image_screen.dart';
 import 'package:platform_specific/platform_independent/text_screen.dart';
 
+
+import 'package:platform_specific/single_child/container.dart';
+
+
 void main() {
   runApp(const MyApp());
 }
@@ -15,7 +19,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Platform Specific Widgets',
       debugShowCheckedModeBanner: false,
-      home: IconsScreen(),
+
+
+
+      home: ContainerScreen(),
+
     );
   }
 }
