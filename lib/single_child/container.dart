@@ -62,17 +62,7 @@ class ContainerScreen extends StatelessWidget {
               ),
             ),
           ),
-          Align(
-            alignment: Alignment.topLeft,
-            child: Container(
-              // alignment: Alignment.topRight,
-              height: 100,
-              width: 250,
-              color: Colors.purple,
-              child: Text('This is Align Widget'),
-              // margin: const EdgeInsets.all(40),
-            ),
-          ),
+
 
         ],
       ),
