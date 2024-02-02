@@ -8,7 +8,7 @@ class ColumnScreen extends StatelessWidget {
     return Scaffold(
         body: Column(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      // crossAxisAlignment: CrossAxisAlignment.stretch,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Container(
           color: Colors.blue,
