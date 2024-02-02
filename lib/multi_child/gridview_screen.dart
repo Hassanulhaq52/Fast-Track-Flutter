@@ -10,7 +10,7 @@ class GridviewScreen extends StatelessWidget {
       body: GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3, mainAxisSpacing: 20, crossAxisSpacing: 20,),itemCount: 8, itemBuilder: (context, index){
 
         return Container(color: Colors.yellow,
-        child: Text('I am GridView ${index + 1}'),);
+        child: Text('I am GridView Builder ${index + 1}'),);
 
       }),
       
