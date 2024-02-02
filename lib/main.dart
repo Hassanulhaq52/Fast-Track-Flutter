@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:platform_specific/platform_independent/icons_screen.dart';
-import 'package:platform_specific/platform_independent/image_screen.dart';
-import 'package:platform_specific/platform_independent/text_screen.dart';
+import 'package:platform_specific/multi_child/column_screen.dart';
+
 
 
 import 'package:platform_specific/single_child/container.dart';
@@ -22,7 +21,7 @@ class MyApp extends StatelessWidget {
 
 
 
-      home: ContainerScreen(),
+      home: ColumnScreen()
 
     );
   }
