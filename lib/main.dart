@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:platform_specific/multi_child/expanded_screen.dart';
+import 'package:platform_specific/multi_child/flexible_screen.dart';
 
 import 'package:platform_specific/multi_child/stack_screen.dart';
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Platform Specific Widgets',
       debugShowCheckedModeBanner: false,
-      home: ExpandedScreen()
+      home: FlexibleScreen()
     );
   }
 }
