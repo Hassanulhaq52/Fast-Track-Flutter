@@ -1,25 +1,38 @@
 import 'package:flutter/material.dart';
 
-class TextFieldScreen extends StatelessWidget {
+class TextFieldScreen extends StatefulWidget {
   const TextFieldScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    String? name;
+  State<TextFieldScreen> createState() => _TextFieldScreenState();
+}
 
+class _TextFieldScreenState extends State<TextFieldScreen> {
+  String name = '';
+
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: TextField(
-          onChanged: (value) {
-            name = value;
-            print(name);
-          },
-          decoration: InputDecoration(
-            hintText: 'Enter Your Name',
-            suffixIcon: Icon(Icons.email),
-            prefixIcon: Icon(Icons.phone),
-            labelText: 'Hello',
-          ),
+        child: Column(
+          children: [
+            TextField(
+              onChanged: (value) {
+                setState(() {
+                  name = value;
+                });
+
+                print(name);
+              },
+              decoration: const InputDecoration(
+                hintText: 'Enter Your Name',
+                suffixIcon: Icon(Icons.email),
+                prefixIcon: Icon(Icons.phone),
+                labelText: 'Hello',
+              ),
+            ),
+            Text(name),
+          ],
         ),
       ),
     );

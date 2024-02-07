@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:platform_specific/controllers/scroll_controller_screen.dart';
+import 'package:platform_specific/controllers/textediting_controller_screen.dart';
 import 'package:platform_specific/multi_child/expanded_screen.dart';
 import 'package:platform_specific/multi_child/flexible_screen.dart';
 
@@ -22,17 +23,17 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Platform Specific Widgets',
       debugShowCheckedModeBanner: false,
-      initialRoute: '/',
-      routes: {
-
-        '/': (context) => NavigationScreen(),
-        '/intro_screen': (context) => IntroScreen(),
-        '/about_screen': (context) => AboutScreen(),
-        '/contact_screen': (context) => ContactScreen(),
-
-
-      },
-      // home: NavigationScreen(),
+      // initialRoute: '/',
+      // routes: {
+      //
+      //   '/': (context) => NavigationScreen(),
+      //   '/intro_screen': (context) => IntroScreen(),
+      //   '/about_screen': (context) => AboutScreen(),
+      //   '/contact_screen': (context) => ContactScreen(),
+      //
+      //
+      // },
+      home: TextFieldScreen()
     );
   }
 }
