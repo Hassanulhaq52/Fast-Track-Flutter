@@ -5,22 +5,23 @@ class TextEditingControllerScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    TextEditingController controllerValue = TextEditingController();
 
+    return Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-
-          TextField(
-
-
-
-          ),
-
-
-        ],),
+            TextField(
+              // onChanged: (value) {
+              //   controllerValue.text = value;
+              //   print(controllerValue.text);
+              // },
+              controller: controllerValue,
+            ),
+          ],
+        ),
       ),
     );
   }
