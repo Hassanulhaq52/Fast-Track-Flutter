@@ -24,19 +24,25 @@ class NavigationScreen extends StatelessWidget {
           SizedBox(height: 70,),
           ElevatedButton(onPressed: (){
 
-            Navigator.push(context, MaterialPageRoute(builder: (context) => IntroScreen(),));
+            // Navigator.push(context, MaterialPageRoute(builder: (context) => IntroScreen(),));
+
+            Navigator.pushNamed(context, '/intro_screen');
 
           }, child: Text('Go to Home Screen')),
           SizedBox(height: 20,),
           ElevatedButton(onPressed: (){
 
-            Navigator.push(context, MaterialPageRoute(builder: (context) => AboutScreen(),));
+            // Navigator.push(context, MaterialPageRoute(builder: (context) => AboutScreen(),));
+
+            Navigator.pushNamed(context, '/about_screen');
 
           }, child: Text('Go to About Screen')),
           SizedBox(height: 20,),
           ElevatedButton(onPressed: (){
 
-            Navigator.push(context, MaterialPageRoute(builder: (context) => ContactScreen(),));
+            // Navigator.push(context, MaterialPageRoute(builder: (context) => ContactScreen(),));
+
+            Navigator.pushNamed(context, '/contact_screen');
 
           }, child: Text('Go to Contact Screen')),
           // ElevatedButton(onPressed: (){
