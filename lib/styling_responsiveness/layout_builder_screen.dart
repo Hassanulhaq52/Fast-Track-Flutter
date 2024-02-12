@@ -22,10 +22,13 @@ class _LayoutBuilderScreenState extends State<LayoutBuilderScreen> {
               color: Colors.green,
             );
           } else if (constraints.maxWidth > 500) {
-            return Container(
-              width: 200,
-              height: 200,
-              color: Colors.blue,
+            return AspectRatio(
+              aspectRatio: 16/9,
+              child: Container(
+                width: 200,
+                height: 200,
+                color: Colors.blue,
+              ),
             );
           } else {
             return Row(
