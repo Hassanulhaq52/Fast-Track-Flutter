@@ -38,7 +38,7 @@ class GridItem extends StatelessWidget {
       child: Center(
         child: Text(
           'Item $index',
-          style: TextStyle(fontSize: 18, color: Colors.white),
+          style: TextStyle(fontSize: 18, color: Colors.blue),
         ),
       ),
     );
