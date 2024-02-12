@@ -42,6 +42,9 @@ class DrawerScreen extends StatelessWidget {
           ),
         ],
       )),
+      body: Center(
+        child: Text('This is Drawer'),
+      ),
     );
   }
 }

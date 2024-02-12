@@ -1,14 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:platform_specific/controllers/scroll_controller_screen.dart';
-import 'package:platform_specific/controllers/textediting_controller_screen.dart';
-import 'package:platform_specific/multi_child/expanded_screen.dart';
-import 'package:platform_specific/multi_child/flexible_screen.dart';
 
-import 'package:platform_specific/multi_child/stack_screen.dart';
-import 'package:platform_specific/navigation_routing/about.dart';
-import 'package:platform_specific/navigation_routing/contact_us.dart';
-import 'package:platform_specific/navigation_routing/intro.dart';
-import 'package:platform_specific/navigation_routing/navigation_screen.dart';
+import 'package:platform_specific/platform_dependent/drawer.dart';
+import 'package:platform_specific/styling_responsiveness/styling_screen.dart';
 import 'package:platform_specific/text_field.dart';
 
 void main() {
@@ -23,6 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Platform Specific Widgets',
       debugShowCheckedModeBanner: false,
+
       // initialRoute: '/',
       // routes: {
       //
@@ -33,7 +27,11 @@ class MyApp extends StatelessWidget {
       //
       //
       // },
-      home: TextEditingControllerScreen(),
+      //   themeMode: ThemeMode.system,
+      //   theme: ThemeData.light(),
+      // darkTheme: ThemeData.dark(),
+      theme: ThemeData.dark(),
+      home: StylingScreen(),
     );
   }
 }
