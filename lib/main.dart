@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:platform_specific/platform_dependent/drawer.dart';
+import 'package:platform_specific/styling_responsiveness/layout_builder_screen.dart';
 import 'package:platform_specific/styling_responsiveness/responsive_screen.dart';
 import 'package:platform_specific/styling_responsiveness/styling_screen.dart';
 import 'package:platform_specific/text_field.dart';
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
       //   theme: ThemeData.light(),
       // darkTheme: ThemeData.dark(),
       theme: ThemeData.dark(),
-      home: ResponsiveScreen()
+      home: LayoutBuilderScreen()
     );
   }
 }
