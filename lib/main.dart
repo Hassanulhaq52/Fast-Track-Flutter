@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:platform_specific/builders/future_builder_screen.dart';
+import 'package:platform_specific/builders/splash_screen.dart';
 import 'package:platform_specific/styling_responsiveness/orientation_builder_screen.dart';
 
 void main() {
@@ -15,6 +16,6 @@ class MyApp extends StatelessWidget {
         title: 'Platform Specific Widgets',
         debugShowCheckedModeBanner: false,
         theme: ThemeData.dark(),
-        home: FutureBuilderScreen(),);
+        home: SplashScreen(),);
   }
 }
