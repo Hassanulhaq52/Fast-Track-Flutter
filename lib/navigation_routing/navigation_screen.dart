@@ -18,33 +18,54 @@ class NavigationScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Center(
-            child: Text('This is Navigation Screen',style: TextStyle(fontSize: 50),),
+          const Center(
+            child: Text(
+              'This is Navigation Screen',
+              style: TextStyle(fontSize: 50),
+            ),
           ),
-          SizedBox(height: 70,),
-          ElevatedButton(onPressed: (){
+          SizedBox(
+            height: 70,
+          ),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => IntroScreen(),
+                    ));
 
-            // Navigator.push(context, MaterialPageRoute(builder: (context) => IntroScreen(),));
+                // Navigator.pushNamed(context, '/intro_screen');
+              },
+              child: Text('Go to Home Screen')),
+          const SizedBox(
+            height: 20,
+          ),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => AboutScreen(),
+                    ));
 
-            Navigator.pushNamed(context, '/intro_screen');
+                // Navigator.pushNamed(context, '/about_screen');
+              },
+              child: Text('Go to About Screen')),
+          SizedBox(
+            height: 20,
+          ),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ContactScreen(),
+                    ));
 
-          }, child: Text('Go to Home Screen')),
-          SizedBox(height: 20,),
-          ElevatedButton(onPressed: (){
-
-            // Navigator.push(context, MaterialPageRoute(builder: (context) => AboutScreen(),));
-
-            Navigator.pushNamed(context, '/about_screen');
-
-          }, child: Text('Go to About Screen')),
-          SizedBox(height: 20,),
-          ElevatedButton(onPressed: (){
-
-            // Navigator.push(context, MaterialPageRoute(builder: (context) => ContactScreen(),));
-
-            Navigator.pushNamed(context, '/contact_screen');
-
-          }, child: Text('Go to Contact Screen')),
+                // Navigator.pushNamed(context, '/contact_screen');
+              },
+              child: Text('Go to Contact Screen')),
           // ElevatedButton(onPressed: (){
           //
           //   Navigator.
