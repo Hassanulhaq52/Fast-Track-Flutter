@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:platform_specific/api_integration/screens/facts_screen.dart';
 import 'package:platform_specific/builders/future_builder_screen.dart';
 import 'package:platform_specific/builders/splash_screen.dart';
 import 'package:platform_specific/builders/stream_builder_screen.dart';
@@ -17,6 +18,6 @@ class MyApp extends StatelessWidget {
         title: 'Platform Specific Widgets',
         debugShowCheckedModeBanner: false,
         theme: ThemeData.dark(),
-        home: StreamBuilderSCreen(),);
+        home: FactScreen());
   }
 }

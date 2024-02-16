@@ -7,12 +7,12 @@ class StreamBuilderSCreen extends StatelessWidget {
     int count = 0;
 
     while (true) {
-      await Future.delayed(Duration(seconds: 5),);
+      await Future.delayed(
+        Duration(seconds: 5),
+      );
       yield count++;
     }
   }
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -29,8 +29,11 @@ class StreamBuilderSCreen extends StatelessWidget {
               child: Text('${snapshot.error}'),
             );
           } else if (snapshot.hasData) {
-           return Center(
-              child: Text('${snapshot.data}', style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold),),
+            return Center(
+              child: Text(
+                '${snapshot.data}',
+                style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+              ),
             );
           } else {
             return Text("Invalid Error");
