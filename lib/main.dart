@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:platform_specific/api_integration/screens/fact_screen_model.dart';
-import 'package:platform_specific/api_integration/screens/facts_screen.dart';
-import 'package:platform_specific/builders/future_builder_screen.dart';
-import 'package:platform_specific/builders/splash_screen.dart';
-import 'package:platform_specific/builders/stream_builder_screen.dart';
-import 'package:platform_specific/styling_responsiveness/orientation_builder_screen.dart';
+
 
 void main() {
   runApp(const MyApp());

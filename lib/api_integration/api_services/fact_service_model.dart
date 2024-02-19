@@ -13,6 +13,8 @@ class FactServiceModel {
     if (response.statusCode == 200) {
       FactsModel factsData = FactsModel.fromJson(body);
       return factsData;
+    } else {
+      print('error');
     }
   }
 }

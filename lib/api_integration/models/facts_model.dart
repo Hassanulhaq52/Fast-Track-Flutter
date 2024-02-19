@@ -4,6 +4,8 @@ class FactsModel {
   String? fact;
   int? length;
 
-  factory FactsModel.fromJson(Map<String, dynamic> json) =>
-      FactsModel(fact: json['fact'], length: json['length']);
+  factory FactsModel.fromJson(Map<String, dynamic> json) => FactsModel(
+        fact: json['fact'],
+        length: json['length'],
+      );
 }
