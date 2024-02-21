@@ -29,12 +29,12 @@ class DefaultFirebaseOptions {
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
-              'you can reconfigure this by running the FlutterFire CLI again.',
+          'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
-              'you can reconfigure this by running the FlutterFire CLI again.',
+          'you can reconfigure this by running the FlutterFire CLI again.',
         );
       default:
         throw UnsupportedError(
@@ -48,7 +48,6 @@ class DefaultFirebaseOptions {
     appId: '1:1044741675581:android:203c985aaa3ab45f402854',
     messagingSenderId: '120922277909',
     projectId: 'fast-track-flutter',
-
   );
 
   static const FirebaseOptions android = FirebaseOptions(
@@ -66,9 +65,8 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAgyU8W3MDJrwGlCQvF0Ykp-K_rWce6GcY',
-    appId: '1:1044741675581:android:203c985aaa3ab45f402854',
-    messagingSenderId: '120922277909',
-    projectId: 'fast-track-flutter',
-  );
+      apiKey: 'AIzaSyAgyU8W3MDJrwGlCQvF0Ykp-K_rWce6GcY',
+      appId: '1:1044741675581:android:203c985aaa3ab45f402854',
+      messagingSenderId: '120922277909',
+      projectId: 'fast-track-flutter');
 }
