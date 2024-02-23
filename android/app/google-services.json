@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1044741675581",
+    "project_id": "fast-track-flutter",
+    "storage_bucket": "fast-track-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044741675581:android:203c985aaa3ab45f402854",
+        "android_client_info": {
+          "package_name": "com.example.platform_specific"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgyU8W3MDJrwGlCQvF0Ykp-K_rWce6GcY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
