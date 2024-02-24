@@ -1,10 +1,11 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:platform_specific/firebase/authentication/signin_screen.dart';
 
 class SignupScreen extends StatelessWidget {
   SignupScreen({super.key});
 
-  final auth = FirebaseAuth.instance;
+  final _auth = FirebaseAuth.instance;
   String? email;
   String? password;
 
@@ -20,17 +21,27 @@ class SignupScreen extends StatelessWidget {
             },
           ),
           TextField(
+            obscureText: true,
             onChanged: (value) {
               password = value;
             },
           ),
           ElevatedButton(
               onPressed: () {
-                auth.createUserWithEmailAndPassword(
+                _auth.createUserWithEmailAndPassword(
                     email: email!, password: password!);
                 print('User Resgistered');
               },
-              child: Text('Sign Up'))
+              child: Text('Sign Up')),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => SigninScreen(),
+                    ));
+              },
+              child: Text('Already have an account Sign In')),
         ],
       )),
     );
