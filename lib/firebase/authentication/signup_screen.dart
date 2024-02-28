@@ -32,7 +32,7 @@ class SignupScreen extends StatelessWidget {
                     email: email!, password: password!);
                 print('User Resgistered');
               },
-              child: Text('Sign Up')),
+              child: const Text('Sign Up')),
           ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -41,7 +41,7 @@ class SignupScreen extends StatelessWidget {
                       builder: (context) => SigninScreen(),
                     ));
               },
-              child: Text('Already have an account Sign In')),
+              child: const Text('Already have an account Sign In')),
         ],
       )),
     );
