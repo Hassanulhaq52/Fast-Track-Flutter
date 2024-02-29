@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:platform_specific/firebase/firebase_crud/update_data_screen.dart';
 
 class FetchDataScreen extends StatelessWidget {
   const FetchDataScreen({super.key});
@@ -25,14 +26,36 @@ class FetchDataScreen extends StatelessWidget {
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 30),
                       ),
-                      trailing: IconButton(
-                        onPressed: () {
-                          deleteData(snapshot.data!.docs[index].id);
-                        },
-                        icon: Icon(
-                          Icons.delete,
-                          color: Colors.red,
-                        ),
+                      trailing: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          IconButton(
+                            onPressed: () {
+                              deleteData(snapshot.data!.docs[index].id);
+                            },
+                            icon: Icon(
+                              Icons.delete,
+                              color: Colors.red,
+                            ),
+                          ),
+                          IconButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => UpdateDataScreen(
+                                    docID: snapshot.data!.docs[index].id,
+                                    name: snapshot.data!.docs[index]['name'],
+                                  ),
+                                ),
+                              );
+                            },
+                            icon: Icon(
+                              Icons.edit,
+                              color: Colors.red,
+                            ),
+                          ),
+                        ],
                       )),
                 );
               },
