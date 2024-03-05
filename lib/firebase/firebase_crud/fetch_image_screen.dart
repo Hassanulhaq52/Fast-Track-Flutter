@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:platform_specific/firebase/firebase_crud/update_image_screen.dart';
 
 class FetchImageScreen extends StatefulWidget {
   const FetchImageScreen({Key? key}) : super(key: key);
@@ -42,7 +43,7 @@ class _FetchImageScreenState extends State<FetchImageScreen> {
                   onDoubleTap: () async {
                     print("Deleting user with ID: $userId");
                     await FirebaseFirestore.instance
-                        .collection("userData")
+                        .collection("userImageData")
                         .doc(userId)
                         .delete()
                         .then((_) {
@@ -61,6 +62,18 @@ class _FetchImageScreenState extends State<FetchImageScreen> {
                         ),
                       );
                     });
+                  },
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => UpdateImageScreen(
+                          id: userId,
+                          name: userName,
+                          userImage: userImage,
+                        ),
+                      ),
+                    );
                   },
                   child: Container(
                     width: double.infinity,
