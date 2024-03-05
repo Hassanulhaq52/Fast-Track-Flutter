@@ -43,7 +43,7 @@ class _AddImageScreenState extends State<AddImageScreen> {
         .collection("userImageData")
         .doc(userid)
         .set(userDetails);
-    // Navigator.pop(context);
+    Navigator.pop(context);
   }
 
   @override
