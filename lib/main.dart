@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:platform_specific/api_integration/screens/fact_screen_model.dart';
 import 'package:platform_specific/firebase/authentication/signup_screen.dart';
 import 'package:platform_specific/firebase/firebase_crud/add_data_screen.dart';
+import 'package:platform_specific/firebase/firebase_crud/add_image_screen.dart';
 import 'package:platform_specific/firebase/firebase_crud/fetch_data_screen.dart';
 import 'package:platform_specific/firebase_options.dart';
 
@@ -21,6 +22,6 @@ class MyApp extends StatelessWidget {
         title: 'Platform Specific Widgets',
         debugShowCheckedModeBanner: false,
         // theme: ThemeData.dark(),
-        home: FetchDataScreen());
+        home: AddImageScreen());
   }
 }
