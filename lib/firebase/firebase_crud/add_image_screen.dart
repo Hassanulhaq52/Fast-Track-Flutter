@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
+
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:uuid/uuid.dart';
@@ -38,12 +39,13 @@ class _AddImageScreenState extends State<AddImageScreen> {
       "User-ID": userid,
       "User-Image": imgURL,
       "User-Name": userName,
+
     };
     await FirebaseFirestore.instance
         .collection("userImageData")
         .doc(userid)
         .set(userDetails);
-    Navigator.pop(context);
+    // Navigator.pop(context);
   }
 
   @override
@@ -85,24 +87,26 @@ class _AddImageScreenState extends State<AddImageScreen> {
             ),
             const SizedBox(height: 10),
 
+            const SizedBox(height: 10),
             ElevatedButton(
-                onPressed: () {
-                  if (userName != null) {
-                    sendWithImage();
+              onPressed: () {
+                if (userName != null) {
+                  sendWithImage();
 
-                    ScaffoldMessenger.of(context)
-                        .showSnackBar(const SnackBar(content: Text('Added')));
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const FetchImageScreen(),
-                        ));
-                  } else {
-                    ScaffoldMessenger.of(context)
-                        .showSnackBar(const SnackBar(content: Text('Error')));
-                  }
-                },
-                child: const Text("Insert"))
+                  ScaffoldMessenger.of(context)
+                      .showSnackBar(const SnackBar(content: Text('Added')));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const FetchImageScreen(),
+                      ));
+                } else {
+                  ScaffoldMessenger.of(context)
+                      .showSnackBar(const SnackBar(content: Text('Error')));
+                }
+              },
+              child: const Text("Insert"),
+            )
           ],
         ),
       ),

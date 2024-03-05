@@ -48,6 +48,7 @@ class DefaultFirebaseOptions {
     appId: '1:1044741675581:android:203c985aaa3ab45f402854',
     messagingSenderId: '120922277909',
     projectId: 'fast-track-flutter',
+    storageBucket: 'fast-track-flutter.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
@@ -55,6 +56,8 @@ class DefaultFirebaseOptions {
     appId: '1:1044741675581:android:203c985aaa3ab45f402854',
     messagingSenderId: '120922277909',
     projectId: 'fast-track-flutter',
+    storageBucket: 'fast-track-flutter.appspot.com',
+
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
@@ -62,11 +65,13 @@ class DefaultFirebaseOptions {
     appId: '1:1044741675581:android:203c985aaa3ab45f402854',
     messagingSenderId: '120922277909',
     projectId: 'fast-track-flutter',
+    storageBucket: 'fast-track-flutter.appspot.com',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
       apiKey: 'AIzaSyAgyU8W3MDJrwGlCQvF0Ykp-K_rWce6GcY',
       appId: '1:1044741675581:android:203c985aaa3ab45f402854',
       messagingSenderId: '120922277909',
-      projectId: 'fast-track-flutter',);
+      projectId: 'fast-track-flutter',
+    storageBucket: 'fast-track-flutter.appspot.com',);
 }
